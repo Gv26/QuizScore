@@ -3,7 +3,8 @@ import csv
 
 
 def quiz_scores(filename):
-    """Return dictionary of quiz team name and percentage final scores
+    """
+    Return dictionary of quiz team name and percentage final scores
     using data from TSV file of individual round scores for each team.
 
     Score for a team calculated by summing their score for each round as
@@ -50,5 +51,5 @@ def quiz_scores(filename):
 
 
 if __name__ == "__main__":
-    for team, result in sorted(quiz_scores('animesoc_quiz_data.txt').items()):
+    for team, result in sorted(quiz_scores('example_data.txt').items()):
         print(team + ':', str(round(result, 1)) + '%')
